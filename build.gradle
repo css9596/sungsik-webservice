@@ -36,7 +36,9 @@ dependencies {
 
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.springframework.boot:spring-boot-starter-test')
-    compile('org.projectlombok:lombok')
+    compile('org.projectlombok:lombok')//getter setter 자동셋팅
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')//스프링부트 버전에 맞춰 자동으로 Jpa관련 라이브러리들의 버전관리
+    compile('com.h2database:h2')//인메모리 관계형 데이터베이스 - 별도 설치 없이 프로젝트 의존성만으로 관리, 메모리에서 실행이 되기 때문에 테스트 용도로 많이 사용
 }
 
 /*
